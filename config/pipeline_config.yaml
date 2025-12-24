@@ -1,0 +1,207 @@
+# =============================================================================
+# Airflow Demand Forecasting Pipeline - Configuration
+# =============================================================================
+# This configuration file centralizes all pipeline parameters to enable
+# easy tuning without code modifications. All values are environment-agnostic
+# and can be overridden via environment variables when needed.
+# =============================================================================
+
+# -----------------------------------------------------------------------------
+# General Pipeline Settings
+# -----------------------------------------------------------------------------
+pipeline:
+  name: "demand_forecasting_pipeline"
+  version: "1.0.0"
+  owner: "data-engineering-team"
+  description: "End-to-end demand forecasting pipeline using Prophet"
+
+# -----------------------------------------------------------------------------
+# Data Paths Configuration
+# -----------------------------------------------------------------------------
+# Relative paths from project root. In production, these would typically
+# point to cloud storage (S3, GCS) or a data lake.
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  predictions: "data/predictions"
+  models: "models/saved_models"
+  logs: "logs"
+
+# -----------------------------------------------------------------------------
+# Data Quality Validation Thresholds
+# -----------------------------------------------------------------------------
+# These thresholds define acceptable data quality bounds. Exceeding any
+# threshold will cause the pipeline to fail early, preventing downstream
+# issues from propagating through the system.
+data_quality:
+  # Maximum allowed null rate (0.0 to 1.0)
+  # 5% null rate is acceptable for real-world retail data
+  max_null_rate: 0.05
+
+  # Minimum required records for meaningful statistical analysis
+  # At least 90 days of data recommended for seasonal patterns
+  min_records: 90
+
+  # Maximum allowed gap between consecutive dates (in days)
+  # Gaps > 7 days may indicate data collection issues
+  max_date_gap_days: 7
+
+  # Whether to allow negative sales values
+  # False = strict validation (no negative values allowed)
+  allow_negative_sales: false
+
+  # Outlier detection multiplier for IQR method
+  # Values outside Q1 - (multiplier * IQR) or Q3 + (multiplier * IQR) are outliers
+  outlier_iqr_multiplier: 1.5
+
+# -----------------------------------------------------------------------------
+# Feature Engineering Parameters
+# -----------------------------------------------------------------------------
+# Rolling window sizes and lag features for time-series analysis.
+# These parameters balance capturing trends vs. overfitting to noise.
+features:
+  # Rolling average window sizes (in days)
+  rolling_windows:
+    - 7    # Weekly trend
+    - 14   # Bi-weekly trend
+    - 30   # Monthly trend
+
+  # Lag features for capturing autocorrelation
+  lag_days:
+    - 1    # Yesterday's sales
+    - 7    # Same day last week
+    - 14   # Same day two weeks ago
+
+  # Whether to extract time-based features (day_of_week, month, etc.)
+  extract_time_features: true
+
+# -----------------------------------------------------------------------------
+# Model Training Configuration
+# -----------------------------------------------------------------------------
+# Prophet model hyperparameters tuned for retail demand forecasting.
+# These defaults work well for daily sales data with weekly seasonality.
+model:
+  # Model type identifier for versioning
+  type: "prophet"
+
+  # Forecast horizon (number of days to predict)
+  horizon_days: 30
+
+  # Prophet-specific parameters
+  prophet:
+    # Trend flexibility: higher = more flexible (risk of overfitting)
+    changepoint_prior_scale: 0.05
+
+    # Seasonality flexibility: higher = more flexible patterns
+    seasonality_prior_scale: 10.0
+
+    # Whether to include holidays (requires holidays package)
+    include_holidays: false
+
+    # Country code for holidays (if include_holidays is true)
+    holidays_country: "US"
+
+    # Seasonality mode: 'additive' or 'multiplicative'
+    # Multiplicative better for data where seasonality scales with trend
+    seasonality_mode: "multiplicative"
+
+    # Weekly seasonality (strong pattern for retail)
+    weekly_seasonality: true
+
+    # Yearly seasonality (capture annual patterns)
+    yearly_seasonality: true
+
+    # Uncertainty interval width (e.g., 0.95 = 95% confidence)
+    interval_width: 0.95
+
+# -----------------------------------------------------------------------------
+# Airflow DAG Configuration
+# -----------------------------------------------------------------------------
+# DAG scheduling and execution parameters. These control how often the
+# pipeline runs and how it handles failures.
+airflow:
+  # DAG identifier (must be unique across all DAGs)
+  dag_id: "demand_forecasting_pipeline"
+
+  # Schedule interval (cron expression or preset)
+  # "@daily" = run once per day at midnight UTC
+  schedule_interval: "@daily"
+
+  # Start date for DAG (ISO format)
+  start_date: "2024-01-01"
+
+  # Whether to run for past dates when DAG is first enabled
+  catchup: false
+
+  # Default task arguments
+  default_args:
+    # Task owner for alerting
+    owner: "data-team"
+
+    # Number of retry attempts on failure
+    retries: 2
+
+    # Delay between retries (in seconds)
+    retry_delay_seconds: 300
+
+    # Email on failure (set to true in production)
+    email_on_failure: false
+
+    # Email on retry
+    email_on_retry: false
+
+  # Maximum concurrent tasks
+  max_active_runs: 1
+
+  # Tags for filtering in Airflow UI
+  tags:
+    - "forecasting"
+    - "demand"
+    - "ml"
+
+# -----------------------------------------------------------------------------
+# Logging Configuration
+# -----------------------------------------------------------------------------
+logging:
+  # Log level: DEBUG, INFO, WARNING, ERROR, CRITICAL
+  level: "INFO"
+
+  # Log format string
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
+
+  # Date format for log timestamps
+  date_format: "%Y-%m-%d %H:%M:%S"
+
+# -----------------------------------------------------------------------------
+# Sample Data Generation (for testing/development)
+# -----------------------------------------------------------------------------
+sample_data:
+  # Number of days of historical data to generate
+  num_days: 365
+
+  # Product identifiers to generate data for
+  product_ids:
+    - "PROD_001"
+    - "PROD_002"
+    - "PROD_003"
+
+  # Base daily sales (before trend/seasonality adjustments)
+  base_sales: 100
+
+  # Annual trend growth rate (1.0 = no growth, 1.2 = 20% annual growth)
+  trend_growth: 1.15
+
+  # Seasonality amplitude (as fraction of base sales)
+  seasonality_amplitude: 0.3
+
+  # Noise level (standard deviation as fraction of base sales)
+  noise_level: 0.15
+
+  # Percentage of data points that are outliers (0.0 to 1.0)
+  outlier_rate: 0.07
+
+  # Percentage of data points that are missing (0.0 to 1.0)
+  missing_rate: 0.025
+
+  # Random seed for reproducibility
+  random_seed: 42
