@@ -21,31 +21,9 @@ Raw Data → Validation → Feature Engineering → Model Training → Forecasti
 ## Architecture
 
 ```
-┌─────────────────────────────────────────────────────────────────────────┐
-│                        AIRFLOW DAG ORCHESTRATION                        │
-├─────────────────────────────────────────────────────────────────────────┤
-│                                                                         │
-│  ┌──────────┐    ┌──────────┐    ┌──────────┐    ┌──────────┐          │
-│  │ Extract  │───▶│ Validate │───▶│ Feature  │───▶│  Train   │          │
-│  │   Data   │    │ & Clean  │    │   Eng.   │    │  Model   │          │
-│  └──────────┘    └──────────┘    └──────────┘    └──────────┘          │
-│                                                        │                │
-│                                                        ▼                │
-│                                  ┌──────────┐    ┌──────────┐          │
-│                                  │  Summary │◀───│ Generate │          │
-│                                  │  Report  │    │ Forecast │          │
-│                                  └──────────┘    └──────────┘          │
-│                                                                         │
-├─────────────────────────────────────────────────────────────────────────┤
-│                         PYTHON SCRIPTS LAYER                            │
-├─────────────────────────────────────────────────────────────────────────┤
-│  scripts/                                                               │
-│  ├── data_extraction.py      # Raw data loading & schema validation    │
-│  ├── data_transformation.py  # Quality checks & cleaning               │
-│  ├── feature_engineering.py  # Time-series feature creation            │
-│  ├── model_training.py       # Prophet training & versioning           │
-│  └── prediction_generator.py # Forecast generation                     │
-└─────────────────────────────────────────────────────────────────────────┘
+
+<img width="1093" height="727" alt="image" src="https://github.com/user-attachments/assets/ce522751-bf38-48c3-891e-11e7889442a7" />
+
 ```
 
 ## Project Structure
