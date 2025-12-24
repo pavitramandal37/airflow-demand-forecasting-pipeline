@@ -1,0 +1,26 @@
+[2025-12-25T02:25:17.925+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=feature_engineering permission to 509
+[2025-12-25T02:25:17.994+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=feature_engineering permission to 509
+[2025-12-25T02:25:18.049+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.feature_engineering scheduled__2025-12-23T00:00:00+00:00 [queued]>
+[2025-12-25T02:25:18.057+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.feature_engineering scheduled__2025-12-23T00:00:00+00:00 [queued]>
+[2025-12-25T02:25:18.058+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:25:18.077+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): feature_engineering> on 2025-12-23 00:00:00+00:00
+[2025-12-25T02:25:18.080+0900] {standard_task_runner.py:60} INFO - Started process 15791 to run task
+[2025-12-25T02:25:18.083+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'feature_engineering', 'scheduled__2025-12-23T00:00:00+00:00', '--job-id', '8', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmpapexsiad']
+[2025-12-25T02:25:18.086+0900] {standard_task_runner.py:88} INFO - Job 8: Subtask feature_engineering
+[2025-12-25T02:25:18.139+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=feature_engineering permission to 509
+[2025-12-25T02:25:18.140+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.feature_engineering scheduled__2025-12-23T00:00:00+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:25:18.208+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='feature_engineering' AIRFLOW_CTX_EXECUTION_DATE='2025-12-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-23T00:00:00+00:00'
+[2025-12-25T02:25:18.209+0900] {demand_forecasting_pipeline.py:152} INFO - Starting feature engineering task
+[2025-12-25T02:25:18.217+0900] {feature_engineering.py:258} INFO - Starting feature engineering: /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/cleaned_data.csv
+[2025-12-25T02:25:18.247+0900] {feature_engineering.py:263} INFO - Loaded 1068 records
+[2025-12-25T02:25:18.256+0900] {feature_engineering.py:276} INFO - Aggregated to daily level: 365 days
+[2025-12-25T02:25:18.263+0900] {feature_engineering.py:106} INFO - Added time-based features: day_of_week, month, quarter, etc.
+[2025-12-25T02:25:18.267+0900] {feature_engineering.py:151} INFO - Added rolling features with windows: [7, 14, 30]
+[2025-12-25T02:25:18.269+0900] {feature_engineering.py:189} INFO - Added lag features with periods: [1, 7, 14]
+[2025-12-25T02:25:18.271+0900] {feature_engineering.py:220} INFO - Created Prophet format: ds <- date, y <- sales_quantity
+[2025-12-25T02:25:18.290+0900] {feature_engineering.py:345} INFO - Feature engineering complete. Added 15 features, saved 365 records to /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/features.csv
+[2025-12-25T02:25:18.291+0900] {demand_forecasting_pipeline.py:162} INFO - Feature engineering complete: 15 features added
+[2025-12-25T02:25:18.292+0900] {python.py:201} INFO - Done. Returned value was: {'input_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/cleaned_data.csv', 'output_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/features.csv', 'original_records': 1068, 'engineered_records': 365, 'product_filter': None, 'features_added': ['day_of_week', 'day_of_month', 'week_of_year', 'month', 'quarter', 'year', 'is_weekend', 'is_month_start', 'is_month_end', 'sales_quantity_rolling_7d', 'sales_quantity_rolling_14d', 'sales_quantity_rolling_30d', 'sales_quantity_lag_1d', 'sales_quantity_lag_7d', 'sales_quantity_lag_14d'], 'num_features': 15, 'rolling_windows': [7, 14, 30], 'lag_days': [1, 7, 14], 'date_range': {'start': '2024-12-26', 'end': '2025-12-25'}, 'processed_at': '2025-12-25T02:25:18.290931'}
+[2025-12-25T02:25:18.313+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demand_forecasting_pipeline, task_id=feature_engineering, execution_date=20251223T000000, start_date=20251224T172518, end_date=20251224T172518
+[2025-12-25T02:25:18.337+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-25T02:25:18.359+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

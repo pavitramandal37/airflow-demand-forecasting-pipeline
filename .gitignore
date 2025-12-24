@@ -1,56 +1,56 @@
-# Byte-compiled / optimized / DLL files
-__pycache__/
-*.py[cod]
-*$py.class
+# # Byte-compiled / optimized / DLL files
+# __pycache__/
+# *.py[cod]
+# *$py.class
 
-# C extensions
-*.so
+# # C extensions
+# *.so
 
-# Distribution / packaging
-.Python
-build/
-develop-eggs/
-dist/
-downloads/
-eggs/
-.eggs/
-lib/
-lib64/
-parts/
-sdist/
-var/
-wheels/
-*.egg-info/
-.installed.cfg
-*.egg
+# # Distribution / packaging
+# .Python
+# build/
+# develop-eggs/
+# dist/
+# downloads/
+# eggs/
+# .eggs/
+# lib/
+# lib64/
+# parts/
+# sdist/
+# var/
+# wheels/
+# *.egg-info/
+# .installed.cfg
+# *.egg
 
-# PyInstaller
-*.manifest
-*.spec
+# # PyInstaller
+# *.manifest
+# *.spec
 
-# Installer logs
-pip-log.txt
-pip-delete-this-directory.txt
+# # Installer logs
+# pip-log.txt
+# pip-delete-this-directory.txt
 
-# Unit test / coverage reports
-htmlcov/
-.tox/
-.nox/
-.coverage
-.coverage.*
-.cache
-nosetests.xml
-coverage.xml
-*.cover
-*.py,cover
-.hypothesis/
-.pytest_cache/
+# # Unit test / coverage reports
+# htmlcov/
+# .tox/
+# .nox/
+# .coverage
+# .coverage.*
+# .cache
+# nosetests.xml
+# coverage.xml
+# *.cover
+# *.py,cover
+# .hypothesis/
+# .pytest_cache/
 
-# Translations
-*.mo
-*.pot
+# # Translations
+# *.mo
+# *.pot
 
-# Environments
+# # Environments
 .env
 .venv
 env/
@@ -59,42 +59,42 @@ ENV/
 env.bak/
 venv.bak/
 
-# IDE
-.idea/
-.vscode/
-*.swp
-*.swo
-*~
+# # IDE
+# .idea/
+# .vscode/
+# *.swp
+# *.swo
+# *~
 
-# Jupyter Notebook
-.ipynb_checkpoints
+# # Jupyter Notebook
+# .ipynb_checkpoints
 
-# Project-specific exclusions
-# Logs directory - regenerated on each run
-logs/
-*.log
+# # Project-specific exclusions
+# # Logs directory - regenerated on each run
+# logs/
+# *.log
 
-# Data directory - generated/downloaded data
-data/
-!data/.gitkeep
+# # Data directory - generated/downloaded data
+# data/
+# !data/.gitkeep
 
-# Model files - generated during training
-*.pkl
-*.pickle
-models/saved_models/
-!models/saved_models/.gitkeep
+# # Model files - generated during training
+# *.pkl
+# *.pickle
+# models/saved_models/
+# !models/saved_models/.gitkeep
 
-# Airflow generated files
-airflow.db
-airflow.cfg
-airflow-webserver.pid
-webserver_config.py
+# # Airflow generated files
+# airflow.db
+# airflow.cfg
+# airflow-webserver.pid
+# webserver_config.py
 
-# OS generated files
-.DS_Store
-.DS_Store?
-._*
-.Spotlight-V100
-.Trashes
-ehthumbs.db
-Thumbs.db
+# # OS generated files
+# .DS_Store
+# .DS_Store?
+# ._*
+# .Spotlight-V100
+# .Trashes
+# ehthumbs.db
+# Thumbs.db

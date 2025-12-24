@@ -1,0 +1,18 @@
+{
+  "version": "prophet_model_v20251225_561845d0",
+  "created_at": "2025-12-25T02:44:48.811181",
+  "data_hash": "561845d0",
+  "model_type": "prophet",
+  "training_duration_sec": 0.08,
+  "horizon_days": 30,
+  "training_records": 365,
+  "date_range": {
+    "start": "2024-12-26",
+    "end": "2025-12-25"
+  },
+  "prophet_params": {
+    "changepoint_prior_scale": 0.05,
+    "seasonality_prior_scale": 10.0,
+    "seasonality_mode": "multiplicative"
+  }
+}

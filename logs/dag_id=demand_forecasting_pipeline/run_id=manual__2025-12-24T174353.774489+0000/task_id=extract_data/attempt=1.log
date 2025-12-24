@@ -1,0 +1,23 @@
+[2025-12-25T02:44:05.806+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=extract_data permission to 509
+[2025-12-25T02:44:05.873+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=extract_data permission to 509
+[2025-12-25T02:44:05.937+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.extract_data manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:44:05.946+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.extract_data manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:44:05.947+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:44:05.966+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): extract_data> on 2025-12-24 17:43:53.774489+00:00
+[2025-12-25T02:44:05.969+0900] {standard_task_runner.py:60} INFO - Started process 17274 to run task
+[2025-12-25T02:44:05.972+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'extract_data', 'manual__2025-12-24T17:43:53.774489+00:00', '--job-id', '20', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmp0ierxznh']
+[2025-12-25T02:44:05.974+0900] {standard_task_runner.py:88} INFO - Job 20: Subtask extract_data
+[2025-12-25T02:44:06.022+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=extract_data permission to 509
+[2025-12-25T02:44:06.023+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.extract_data manual__2025-12-24T17:43:53.774489+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:44:06.097+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='extract_data' AIRFLOW_CTX_EXECUTION_DATE='2025-12-24T17:43:53.774489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-24T17:43:53.774489+00:00'
+[2025-12-25T02:44:06.099+0900] {demand_forecasting_pipeline.py:85} INFO - Starting data extraction task
+[2025-12-25T02:44:06.106+0900] {data_extraction.py:171} INFO - Starting data extraction from /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/raw/sample_sales_data.csv
+[2025-12-25T02:44:06.109+0900] {data_extraction.py:92} INFO - File validation passed: /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/raw/sample_sales_data.csv
+[2025-12-25T02:44:06.125+0900] {data_extraction.py:188} INFO - Read 1068 records from /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/raw/sample_sales_data.csv
+[2025-12-25T02:44:06.126+0900] {data_extraction.py:114} INFO - Schema validation passed. Columns: ['date', 'product_id', 'sales_quantity', 'revenue']
+[2025-12-25T02:44:06.145+0900] {data_extraction.py:219} INFO - Extraction complete. Records: 1068, Products: 3, Date range: 2024-12-26 to 2025-12-25
+[2025-12-25T02:44:06.252+0900] {demand_forecasting_pipeline.py:93} INFO - Extraction complete: 1068 records
+[2025-12-25T02:44:06.254+0900] {python.py:201} INFO - Done. Returned value was: {'file_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/raw/sample_sales_data.csv', 'num_records': 1068, 'num_products': 3, 'products': ['PROD_001', 'PROD_002', 'PROD_003'], 'date_range': {'start': '2024-12-26', 'end': '2025-12-25', 'num_days': 365}, 'data_hash': 'ef9a06fa', 'extracted_at': '2025-12-25T02:44:06.144592', 'statistics': {'total_sales': 113436, 'total_revenue': 1271246.94, 'avg_daily_sales': 106.21, 'avg_revenue': 1190.31}}
+[2025-12-25T02:44:06.279+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demand_forecasting_pipeline, task_id=extract_data, execution_date=20251224T174353, start_date=20251224T174405, end_date=20251224T174406
+[2025-12-25T02:44:06.305+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-25T02:44:06.326+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

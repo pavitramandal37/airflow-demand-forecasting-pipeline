@@ -1,0 +1,38 @@
+[2025-12-25T02:44:48.245+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=train_model permission to 509
+[2025-12-25T02:44:48.330+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=train_model permission to 509
+[2025-12-25T02:44:48.398+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.train_model manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:44:48.406+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.train_model manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:44:48.406+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:44:48.422+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): train_model> on 2025-12-24 17:43:53.774489+00:00
+[2025-12-25T02:44:48.425+0900] {standard_task_runner.py:60} INFO - Started process 17354 to run task
+[2025-12-25T02:44:48.427+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'train_model', 'manual__2025-12-24T17:43:53.774489+00:00', '--job-id', '23', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmpegluwdbq']
+[2025-12-25T02:44:48.429+0900] {standard_task_runner.py:88} INFO - Job 23: Subtask train_model
+[2025-12-25T02:44:48.474+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=train_model permission to 509
+[2025-12-25T02:44:48.475+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.train_model manual__2025-12-24T17:43:53.774489+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:44:48.552+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2025-12-24T17:43:53.774489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-24T17:43:53.774489+00:00'
+[2025-12-25T02:44:48.553+0900] {demand_forecasting_pipeline.py:183} INFO - Starting model training task
+[2025-12-25T02:44:48.560+0900] {model_training.py:269} INFO - Starting model training from /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/features.csv
+[2025-12-25T02:44:48.579+0900] {model_training.py:273} INFO - Loaded 365 training records
+[2025-12-25T02:44:48.589+0900] {model_training.py:277} INFO - Data hash: 561845d0
+[2025-12-25T02:44:48.590+0900] {model_training.py:281} INFO - Model version: prophet_model_v20251225_561845d0
+[2025-12-25T02:44:48.590+0900] {model_training.py:168} INFO - Training Prophet model on 365 records
+[2025-12-25T02:44:48.730+0900] {model_training.py:141} INFO - Configured Prophet with: changepoint_prior_scale=0.05, seasonality_mode=multiplicative
+[2025-12-25T02:44:48.742+0900] {forecaster.py:961} INFO - Disabling daily seasonality. Run prophet with daily_seasonality=True to override this.
+[2025-12-25T02:44:48.763+0900] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpiu8plq4w/6h17lrvt.json
+[2025-12-25T02:44:48.772+0900] {filesystem.py:118} DEBUG - input tempfile: /tmp/tmpiu8plq4w/rwtmmnk7.json
+[2025-12-25T02:44:48.774+0900] {model.py:2041} DEBUG - idx 0
+[2025-12-25T02:44:48.775+0900] {model.py:2042} DEBUG - running CmdStan, num_threads: None
+[2025-12-25T02:44:48.776+0900] {model.py:2054} DEBUG - CmdStan args: ['/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/prophet/stan_model/prophet_model.bin', 'random', 'seed=61581', 'data', 'file=/tmp/tmpiu8plq4w/6h17lrvt.json', 'init=/tmp/tmpiu8plq4w/rwtmmnk7.json', 'output', 'file=/tmp/tmpiu8plq4w/prophet_modelnzcfb11g/prophet_model-20251225024448.csv', 'method=optimize', 'algorithm=lbfgs', 'iter=10000']
+[2025-12-25T02:44:48.777+0900] {logging_mixin.py:188} WARNING - 02:44:48 - cmdstanpy - INFO - Chain [1] start processing
+[2025-12-25T02:44:48.777+0900] {model.py:2057} INFO - Chain [1] start processing
+[2025-12-25T02:44:48.808+0900] {logging_mixin.py:188} WARNING - 02:44:48 - cmdstanpy - INFO - Chain [1] done processing
+[2025-12-25T02:44:48.808+0900] {model.py:2114} INFO - Chain [1] done processing
+[2025-12-25T02:44:48.810+0900] {model_training.py:185} INFO - Training complete in 0.08 seconds
+[2025-12-25T02:44:48.814+0900] {model_training.py:219} INFO - Saved model to /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0.pkl
+[2025-12-25T02:44:48.817+0900] {model_training.py:225} INFO - Saved metadata to /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0_metadata.json
+[2025-12-25T02:44:48.817+0900] {model_training.py:315} INFO - Model training complete. Version: prophet_model_v20251225_561845d0, Duration: 0.08s
+[2025-12-25T02:44:48.818+0900] {demand_forecasting_pipeline.py:194} INFO - Model training complete: prophet_model_v20251225_561845d0, duration: 0.08s
+[2025-12-25T02:44:48.818+0900] {python.py:201} INFO - Done. Returned value was: {'version': 'prophet_model_v20251225_561845d0', 'created_at': '2025-12-25T02:44:48.811181', 'data_hash': '561845d0', 'model_type': 'prophet', 'training_duration_sec': 0.08, 'horizon_days': 30, 'training_records': 365, 'date_range': {'start': '2024-12-26', 'end': '2025-12-25'}, 'prophet_params': {'changepoint_prior_scale': 0.05, 'seasonality_prior_scale': 10.0, 'seasonality_mode': 'multiplicative'}, 'model_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0.pkl', 'metadata_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0_metadata.json'}
+[2025-12-25T02:44:48.841+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demand_forecasting_pipeline, task_id=train_model, execution_date=20251224T174353, start_date=20251224T174448, end_date=20251224T174448
+[2025-12-25T02:44:48.881+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-25T02:44:48.901+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

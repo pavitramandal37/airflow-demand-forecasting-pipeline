@@ -1,0 +1,26 @@
+[2025-12-25T02:45:00.257+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=generate_forecast permission to 509
+[2025-12-25T02:45:00.325+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=generate_forecast permission to 509
+[2025-12-25T02:45:00.393+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.generate_forecast manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:45:00.400+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.generate_forecast manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:45:00.400+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:45:00.415+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): generate_forecast> on 2025-12-24 17:43:53.774489+00:00
+[2025-12-25T02:45:00.418+0900] {standard_task_runner.py:60} INFO - Started process 17374 to run task
+[2025-12-25T02:45:00.421+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'generate_forecast', 'manual__2025-12-24T17:43:53.774489+00:00', '--job-id', '24', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmpf54rflfc']
+[2025-12-25T02:45:00.423+0900] {standard_task_runner.py:88} INFO - Job 24: Subtask generate_forecast
+[2025-12-25T02:45:00.466+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=generate_forecast permission to 509
+[2025-12-25T02:45:00.468+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.generate_forecast manual__2025-12-24T17:43:53.774489+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:45:00.541+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='generate_forecast' AIRFLOW_CTX_EXECUTION_DATE='2025-12-24T17:43:53.774489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-24T17:43:53.774489+00:00'
+[2025-12-25T02:45:00.542+0900] {demand_forecasting_pipeline.py:213} INFO - Starting forecast generation task
+[2025-12-25T02:45:00.549+0900] {prediction_generator.py:288} INFO - Starting prediction generation with horizon: 30 days
+[2025-12-25T02:45:00.555+0900] {prediction_generator.py:106} INFO - Loaded metadata for model version: prophet_model_v20251225_561845d0
+[2025-12-25T02:45:00.556+0900] {prediction_generator.py:110} INFO - Using latest model: /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0.pkl
+[2025-12-25T02:45:00.563+0900] {prediction_generator.py:141} INFO - Successfully loaded model from /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0.pkl
+[2025-12-25T02:45:00.571+0900] {prediction_generator.py:166} INFO - Generated future dataframe with 395 dates
+[2025-12-25T02:45:00.572+0900] {prediction_generator.py:309} INFO - Generating predictions...
+[2025-12-25T02:45:00.868+0900] {prediction_generator.py:322} INFO - Saved forecast to /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/predictions/forecast.csv
+[2025-12-25T02:45:00.870+0900] {prediction_generator.py:339} INFO - Prediction generation complete. Generated 395 predictions for 30 day horizon
+[2025-12-25T02:45:00.871+0900] {demand_forecasting_pipeline.py:224} INFO - Forecast generation complete: 395 predictions, horizon: 30 days
+[2025-12-25T02:45:00.871+0900] {python.py:201} INFO - Done. Returned value was: {'model_version': 'prophet_model_v20251225_561845d0', 'model_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/models/saved_models/prophet_model_v20251225_561845d0.pkl', 'output_path': '/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/predictions/forecast.csv', 'horizon_days': 30, 'total_predictions': 395, 'forecast_range': {'start': '2024-12-26', 'end': '2026-01-24'}, 'forecast_statistics': {'forecast_days': 30, 'mean_forecast': 290.59, 'min_forecast': 179.75, 'max_forecast': 377.27, 'total_forecast': 8717.74, 'avg_confidence_width': 191.76}, 'generated_at': '2025-12-25T02:45:00.870327'}
+[2025-12-25T02:45:00.894+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demand_forecasting_pipeline, task_id=generate_forecast, execution_date=20251224T174353, start_date=20251224T174500, end_date=20251224T174500
+[2025-12-25T02:45:00.927+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-25T02:45:00.944+0900] {taskinstance.py:3280} INFO - 1 downstream tasks scheduled from follow-on schedule check

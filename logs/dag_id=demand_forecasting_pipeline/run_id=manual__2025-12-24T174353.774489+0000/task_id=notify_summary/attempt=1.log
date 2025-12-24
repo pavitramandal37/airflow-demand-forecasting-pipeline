@@ -1,0 +1,60 @@
+[2025-12-25T02:45:12.244+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=notify_summary permission to 509
+[2025-12-25T02:45:12.329+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=notify_summary permission to 509
+[2025-12-25T02:45:12.391+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.notify_summary manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:45:12.398+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.notify_summary manual__2025-12-24T17:43:53.774489+00:00 [queued]>
+[2025-12-25T02:45:12.399+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:45:12.416+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): notify_summary> on 2025-12-24 17:43:53.774489+00:00
+[2025-12-25T02:45:12.419+0900] {standard_task_runner.py:60} INFO - Started process 17408 to run task
+[2025-12-25T02:45:12.422+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'notify_summary', 'manual__2025-12-24T17:43:53.774489+00:00', '--job-id', '25', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmpq6q4f9es']
+[2025-12-25T02:45:12.424+0900] {standard_task_runner.py:88} INFO - Job 25: Subtask notify_summary
+[2025-12-25T02:45:12.478+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=manual__2025-12-24T17:43:53.774489+00:00/task_id=notify_summary permission to 509
+[2025-12-25T02:45:12.480+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.notify_summary manual__2025-12-24T17:43:53.774489+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:45:12.562+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='notify_summary' AIRFLOW_CTX_EXECUTION_DATE='2025-12-24T17:43:53.774489+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='manual__2025-12-24T17:43:53.774489+00:00'
+[2025-12-25T02:45:12.564+0900] {demand_forecasting_pipeline.py:251} INFO - Generating execution summary
+[2025-12-25T02:45:12.718+0900] {logging_mixin.py:188} WARNING - /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/airflow/utils/context.py:315 AirflowContextDeprecationWarning: Accessing 'execution_date' from the template is deprecated and will be removed in a future version. Please use 'data_interval_start' or 'logical_date' instead.
+[2025-12-25T02:45:12.720+0900] {demand_forecasting_pipeline.py:354} INFO - 
+======================================================================
+DEMAND FORECASTING PIPELINE - EXECUTION SUMMARY
+======================================================================
+Pipeline: demand_forecasting_pipeline v1.0.0
+Execution Date: 2025-12-24 17:43:53.774489+00:00
+Run ID: manual__2025-12-24T17:43:53.774489+00:00
+Completed At: 2025-12-25T02:45:12.720493
+Status: SUCCESS
+
+----------------------------------------------------------------------
+STAGE RESULTS
+----------------------------------------------------------------------
+
+1. DATA EXTRACTION
+   - Records extracted: 1068
+   - Products: 3
+
+2. DATA VALIDATION & CLEANING
+   - Quality checks passed: 4
+   - Null rate: 0.0
+   - Rows cleaned/removed: 0
+
+3. FEATURE ENGINEERING
+   - Features added: 15
+   - Records processed: 365
+
+4. MODEL TRAINING
+   - Model version: prophet_model_v20251225_561845d0
+   - Training duration: 0.08s
+   - Training records: 365
+
+5. FORECAST GENERATION
+   - Horizon: 30 days
+   - Total predictions: 395
+   - Mean forecast: 290.59
+   - Total forecast: 8717.74
+   - Confidence width: 191.76
+
+======================================================================
+PIPELINE EXECUTION COMPLETED SUCCESSFULLY
+======================================================================
+[2025-12-25T02:45:12.722+0900] {python.py:201} INFO - Done. Returned value was: {'pipeline_name': 'demand_forecasting_pipeline', 'pipeline_version': '1.0.0', 'execution_date': '2025-12-24 17:43:53.774489+00:00', 'run_id': 'manual__2025-12-24T17:43:53.774489+00:00', 'completed_at': '2025-12-25T02:45:12.720493', 'status': 'SUCCESS', 'stages': {'extraction': {'records_extracted': 1068, 'products': 3, 'date_range': {'start': '2024-12-26', 'end': '2025-12-25', 'num_days': 365}}, 'validation': {'checks_passed': 4, 'null_rate': 0.0, 'rows_cleaned': 0}, 'feature_engineering': {'features_added': 15, 'records_processed': 365}, 'model_training': {'model_version': 'prophet_model_v20251225_561845d0', 'training_duration_sec': 0.08, 'training_records': 365}, 'forecasting': {'horizon_days': 30, 'total_predictions': 395, 'forecast_statistics': {'forecast_days': 30, 'mean_forecast': 290.59, 'min_forecast': 179.75, 'max_forecast': 377.27, 'total_forecast': 8717.74, 'avg_confidence_width': 191.76}}}, 'report': '======================================================================\nDEMAND FORECASTING PIPELINE - EXECUTION SUMMARY\n======================================================================\nPipeline: demand_forecasting_pipeline v1.0.0\nExecution Date: 2025-12-24 17:43:53.774489+00:00\nRun ID: manual__2025-12-24T17:43:53.774489+00:00\nCompleted At: 2025-12-25T02:45:12.720493\nStatus: SUCCESS\n\n----------------------------------------------------------------------\nSTAGE RESULTS\n----------------------------------------------------------------------\n\n1. DATA EXTRACTION\n   - Records extracted: 1068\n   - Products: 3\n\n2. DATA VALIDATION & CLEANING\n   - Quality checks passed: 4\n   - Null rate: 0.0\n   - Rows cleaned/removed: 0\n\n3. FEATURE ENGINEERING\n   - Features added: 15\n   - Records processed: 365\n\n4. MODEL TRAINING\n   - Model version: prophet_model_v20251225_561845d0\n   - Training duration: 0.08s\n   - Training records: 365\n\n5. FORECAST GENERATION\n   - Horizon: 30 days\n   - Total predictions: 395\n   - Mean forecast: 290.59\n   - Total forecast: 8717.74\n   - Confidence width: 191.76\n\n======================================================================\nPIPELINE EXECUTION COMPLETED SUCCESSFULLY\n======================================================================'}
+[2025-12-25T02:45:12.757+0900] {taskinstance.py:1138} INFO - Marking task as SUCCESS. dag_id=demand_forecasting_pipeline, task_id=notify_summary, execution_date=20251224T174353, start_date=20251224T174512, end_date=20251224T174512
+[2025-12-25T02:45:12.796+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 0
+[2025-12-25T02:45:12.807+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check

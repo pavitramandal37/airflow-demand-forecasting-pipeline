@@ -1,0 +1,51 @@
+[2025-12-25T02:25:29.928+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=train_model permission to 509
+[2025-12-25T02:25:29.994+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=train_model permission to 509
+[2025-12-25T02:25:30.049+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=non-requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.train_model scheduled__2025-12-23T00:00:00+00:00 [queued]>
+[2025-12-25T02:25:30.057+0900] {taskinstance.py:1956} INFO - Dependencies all met for dep_context=requeueable deps ti=<TaskInstance: demand_forecasting_pipeline.train_model scheduled__2025-12-23T00:00:00+00:00 [queued]>
+[2025-12-25T02:25:30.057+0900] {taskinstance.py:2170} INFO - Starting attempt 1 of 3
+[2025-12-25T02:25:30.073+0900] {taskinstance.py:2191} INFO - Executing <Task(PythonOperator): train_model> on 2025-12-23 00:00:00+00:00
+[2025-12-25T02:25:30.077+0900] {standard_task_runner.py:60} INFO - Started process 15810 to run task
+[2025-12-25T02:25:30.080+0900] {standard_task_runner.py:87} INFO - Running: ['airflow', 'tasks', 'run', 'demand_forecasting_pipeline', 'train_model', 'scheduled__2025-12-23T00:00:00+00:00', '--job-id', '9', '--raw', '--subdir', 'DAGS_FOLDER/demand_forecasting_pipeline.py', '--cfg-path', '/tmp/tmp6654td33']
+[2025-12-25T02:25:30.082+0900] {standard_task_runner.py:88} INFO - Job 9: Subtask train_model
+[2025-12-25T02:25:30.128+0900] {logging_mixin.py:188} INFO - Changing /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/logs/dag_id=demand_forecasting_pipeline/run_id=scheduled__2025-12-23T00:00:00+00:00/task_id=train_model permission to 509
+[2025-12-25T02:25:30.130+0900] {task_command.py:423} INFO - Running <TaskInstance: demand_forecasting_pipeline.train_model scheduled__2025-12-23T00:00:00+00:00 [running]> on host LOQER.localdomain
+[2025-12-25T02:25:30.207+0900] {taskinstance.py:2480} INFO - Exporting env vars: AIRFLOW_CTX_DAG_OWNER='data-team' AIRFLOW_CTX_DAG_ID='demand_forecasting_pipeline' AIRFLOW_CTX_TASK_ID='train_model' AIRFLOW_CTX_EXECUTION_DATE='2025-12-23T00:00:00+00:00' AIRFLOW_CTX_TRY_NUMBER='1' AIRFLOW_CTX_DAG_RUN_ID='scheduled__2025-12-23T00:00:00+00:00'
+[2025-12-25T02:25:30.208+0900] {demand_forecasting_pipeline.py:183} INFO - Starting model training task
+[2025-12-25T02:25:30.215+0900] {model_training.py:263} INFO - Starting model training from /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/data/processed/features.csv
+[2025-12-25T02:25:30.233+0900] {model_training.py:267} INFO - Loaded 365 training records
+[2025-12-25T02:25:30.242+0900] {model_training.py:271} INFO - Data hash: 561845d0
+[2025-12-25T02:25:30.243+0900] {model_training.py:275} INFO - Model version: prophet_model_v20251225_561845d0
+[2025-12-25T02:25:30.243+0900] {model_training.py:162} INFO - Training Prophet model on 365 records
+[2025-12-25T02:25:30.452+0900] {taskinstance.py:2698} ERROR - Task failed with exception
+Traceback (most recent call last):
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/airflow/models/taskinstance.py", line 433, in _execute_task
+    result = execute_callable(context=context, **execute_callable_kwargs)
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 199, in execute
+    return_value = self.execute_callable()
+                   ^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/airflow/operators/python.py", line 216, in execute_callable
+    return self.python_callable(*self.op_args, **self.op_kwargs)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py", line 192, in task_train_model
+    metadata = train_and_save_model(str(data_path), str(models_dir), config)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/scripts/model_training.py", line 278, in train_and_save_model
+    model, training_duration = train_prophet_model(df, config)
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/scripts/model_training.py", line 169, in train_prophet_model
+    model = configure_prophet(config)
+            ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/scripts/model_training.py", line 126, in configure_prophet
+    model = Prophet(
+            ^^^^^^^^
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/prophet/forecaster.py", line 155, in __init__
+    self._load_stan_backend(stan_backend)
+  File "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/venv/lib/python3.11/site-packages/prophet/forecaster.py", line 168, in _load_stan_backend
+    logger.debug("Loaded stan backend: %s", self.stan_backend.get_type())
+                                            ^^^^^^^^^^^^^^^^^
+AttributeError: 'Prophet' object has no attribute 'stan_backend'
+[2025-12-25T02:25:30.475+0900] {taskinstance.py:1138} INFO - Marking task as UP_FOR_RETRY. dag_id=demand_forecasting_pipeline, task_id=train_model, execution_date=20251223T000000, start_date=20251224T172530, end_date=20251224T172530
+[2025-12-25T02:25:30.496+0900] {standard_task_runner.py:107} ERROR - Failed to execute job 9 for task train_model ('Prophet' object has no attribute 'stan_backend'; 15810)
+[2025-12-25T02:25:30.533+0900] {local_task_job_runner.py:234} INFO - Task exited with return code 1
+[2025-12-25T02:25:30.553+0900] {taskinstance.py:3280} INFO - 0 downstream tasks scheduled from follow-on schedule check
