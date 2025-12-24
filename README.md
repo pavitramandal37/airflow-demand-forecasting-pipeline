@@ -20,11 +20,7 @@ Raw Data → Validation → Feature Engineering → Model Training → Forecasti
 
 ## Architecture
 
-```
-
 <img width="1093" height="727" alt="image" src="https://github.com/user-attachments/assets/ce522751-bf38-48c3-891e-11e7889442a7" />
-
-```
 
 ## Project Structure
 
