@@ -39,6 +39,12 @@ from typing import Any, Dict, Optional, Tuple
 
 import pandas as pd
 import yaml
+
+# Suppress cmdstanpy logger to prevent Prophet initialization issues
+import cmdstanpy
+cmdstanpy_logger = logging.getLogger('cmdstanpy')
+cmdstanpy_logger.setLevel(logging.WARNING)
+
 from prophet import Prophet
 
 # Configure logging

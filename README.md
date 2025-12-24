@@ -109,6 +109,38 @@ airflow-demand-forecasting/
 
    Enable and trigger the `demand_forecasting_pipeline` DAG from the UI.
 
+## WSL Testing
+
+For testing in Windows Subsystem for Linux (WSL), we provide specialized documentation and tools:
+
+### Quick Start (WSL)
+
+```bash
+# Open WSL
+wsl
+
+# Navigate to project
+cd "/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting"
+
+# Run automated test
+chmod +x wsl_quick_test.sh
+./wsl_quick_test.sh
+```
+
+### WSL Resources
+
+- **[WSL Testing Guide](WSL_TESTING_GUIDE.md)** - Comprehensive step-by-step setup and testing instructions
+- **[WSL Commands Reference](WSL_COMMANDS.md)** - Quick command reference for common operations
+- **[WSL Testing Checklist](WSL_TESTING_CHECKLIST.md)** - Verification checklist for ensuring proper setup
+- **`wsl_quick_test.sh`** - Automated script to test all pipeline components
+
+The automated test script will:
+- Set up the environment
+- Test each pipeline component individually
+- Display results and next steps
+- Verify all outputs are generated correctly
+
+
 ### Running Scripts Standalone
 
 Each script can be run independently for testing and debugging:
