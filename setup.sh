@@ -60,7 +60,7 @@ log_info "Setting up Python environment..."
 # Check if virtual environment exists
 if [ ! -d "venv" ]; then
     log_info "Creating virtual environment..."
-    python3 -m venv venv
+    python3.11 -m venv venv
 else
     log_warn "Virtual environment already exists, skipping creation."
 fi
