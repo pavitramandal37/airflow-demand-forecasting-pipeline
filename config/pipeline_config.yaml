@@ -12,7 +12,7 @@
 pipeline:
   name: "demand_forecasting_pipeline"
   version: "1.0.0"
-  owner: "data-engineering-team"
+  owner: "Pavitra Mandal"
   description: "End-to-end demand forecasting pipeline using Prophet"
 
 # -----------------------------------------------------------------------------
