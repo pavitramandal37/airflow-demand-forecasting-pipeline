@@ -36,22 +36,50 @@ model:
     # Frequency
     freq: "D"  # Daily frequency
     
-    # External features (CRITICAL for DeepAR)
+    # Device configuration (GPU/CPU)
+    device:
+      use_gpu: true  # Set to false to force CPU
+      gpu_id: 0      # GPU device ID (0 for first GPU)
+      # Auto-detect: Will use GPU if available, otherwise CPU
+      auto_detect: true
+    
+    # External features (CRITICAL for DeepAR) - FLEXIBLE MULTI-FEATURE SUPPORT
     external_features:
       enabled: true
       
-      # Primary external feature
+      # Multiple external features support
+      # Each feature can be dynamic_real (time-varying) or static_cat (constant)
       features:
+        # Primary feature: Revenue
         - name: "revenue"
           type: "dynamic_real"  # Changes over time
+          enabled: true
           
-        # Additional optional features
-        # - name: "price"
-        #   type: "dynamic_real"
-        # - name: "promotions"
-        #   type: "dynamic_real"
-        # - name: "product_id"
-        #   type: "static_cat"  # Static categorical
+        # Additional optional features (enable as needed)
+        - name: "price"
+          type: "dynamic_real"
+          enabled: false  # Set to true to use
+          
+        - name: "promotions"
+          type: "dynamic_real"
+          enabled: false  # Set to true to use
+          
+        - name: "marketing_spend"
+          type: "dynamic_real"
+          enabled: false  # Set to true to use
+          
+        - name: "competitor_price"
+          type: "dynamic_real"
+          enabled: false  # Set to true to use
+          
+        # Static categorical features (don't change over time)
+        - name: "product_category"
+          type: "static_cat"
+          enabled: false  # Set to true to use
+          
+        - name: "region"
+          type: "static_cat"
+          enabled: false  # Set to true to use
       
       # Feature engineering for external features
       preprocessing:
@@ -63,9 +91,16 @@ model:
         rolling_external: true
         rolling_windows: [7, 14, 30]
         
-        # Normalization
+        # Normalization (recommended for neural networks)
         normalize: true
-        normalization_method: "standard"  # or "minmax"
+        normalization_method: "standard"  # or "minmax", "robust"
+        
+        # Handle missing values
+        fill_method: "forward"  # or "backward", "interpolate", "mean"
+        
+        # Outlier handling
+        clip_outliers: true
+        clip_std: 3  # Clip values beyond 3 standard deviations
     
     # Loss function
     loss_function: "NegativeBinomial"  # or "StudentT", "Gaussian"
