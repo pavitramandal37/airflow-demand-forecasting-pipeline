@@ -70,19 +70,20 @@ venv.bak/
 # .ipynb_checkpoints
 
 # # Project-specific exclusions
-# # Logs directory - regenerated on each run
-# logs/
-# *.log
+# Logs directory - regenerated on each run
+logs/
+*.log
+/logs/
 
 # # Data directory - generated/downloaded data
-# data/
-# !data/.gitkeep
+data/
+!data/.gitkeep
 
 # # Model files - generated during training
-# *.pkl
-# *.pickle
-# models/saved_models/
-# !models/saved_models/.gitkeep
+*.pkl
+*.pickle
+models/saved_models/
+!models/saved_models/.gitkeep
 
 # # Airflow generated files
 # airflow.db

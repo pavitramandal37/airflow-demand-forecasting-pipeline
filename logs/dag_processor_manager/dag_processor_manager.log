@@ -484,3 +484,846 @@ File Path                                                                       
 -------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
 /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  2.71s           2025-12-24T17:57:43
 ================================================================================
+[2025-12-25T11:33:40.322+0900] {manager.py:469} INFO - Processing files using up to 1 processes at a time 
+[2025-12-25T11:33:40.324+0900] {manager.py:470} INFO - Process each file at most once every 30 seconds
+[2025-12-25T11:33:40.325+0900] {manager.py:471} INFO - Checking for new files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags every 300 seconds
+[2025-12-25T11:33:40.327+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:33:40.350+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:33:44.225+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T02:33:44
+================================================================================
+[2025-12-25T11:34:18.249+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T02:34:18
+================================================================================
+[2025-12-25T11:34:52.086+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.71s           2025-12-25T02:34:52
+================================================================================
+[2025-12-25T11:35:33.521+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.12s           2025-12-25T02:35:33
+================================================================================
+[2025-12-25T11:36:17.115+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.71s           2025-12-25T02:36:17
+================================================================================
+[2025-12-25T11:37:02.005+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.71s           2025-12-25T02:37:02
+================================================================================
+[2025-12-25T11:37:35.562+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.51s           2025-12-25T02:37:35
+================================================================================
+[2025-12-25T11:38:09.815+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T02:38:09
+================================================================================
+[2025-12-25T11:38:43.265+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T02:38:43
+================================================================================
+[2025-12-25T11:38:43.482+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:38:43.504+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:39:17.086+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T02:39:17
+================================================================================
+[2025-12-25T11:39:50.751+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.52s           2025-12-25T02:39:50
+================================================================================
+[2025-12-25T11:40:24.689+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.71s           2025-12-25T02:40:24
+================================================================================
+[2025-12-25T11:40:58.237+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T02:40:58
+================================================================================
+[2025-12-25T11:41:32.353+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.91s           2025-12-25T02:41:32
+================================================================================
+[2025-12-25T11:42:05.903+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.43s           2025-12-25T02:42:05
+================================================================================
+[2025-12-25T11:42:39.788+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.71s           2025-12-25T02:42:39
+================================================================================
+[2025-12-25T11:43:13.034+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T02:43:13
+================================================================================
+[2025-12-25T11:43:46.463+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:43:46
+================================================================================
+[2025-12-25T11:43:47.539+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:43:47.556+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:44:20.260+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T02:44:20
+================================================================================
+[2025-12-25T11:44:53.779+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T02:44:53
+================================================================================
+[2025-12-25T11:45:27.460+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:45:27
+================================================================================
+[2025-12-25T11:46:01.198+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.51s           2025-12-25T02:46:01
+================================================================================
+[2025-12-25T11:46:34.762+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.33s           2025-12-25T02:46:34
+================================================================================
+[2025-12-25T11:47:08.148+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:47:08
+================================================================================
+[2025-12-25T11:47:41.393+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T02:47:41
+================================================================================
+[2025-12-25T11:48:14.619+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T02:48:14
+================================================================================
+[2025-12-25T11:48:47.753+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  2.91s           2025-12-25T02:48:47
+================================================================================
+[2025-12-25T11:48:48.826+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:48:48.840+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:49:21.013+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T02:49:21
+================================================================================
+[2025-12-25T11:49:54.304+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.13s           2025-12-25T02:49:54
+================================================================================
+[2025-12-25T11:50:27.609+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:50:27
+================================================================================
+[2025-12-25T11:51:01.028+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.33s           2025-12-25T02:51:01
+================================================================================
+[2025-12-25T11:51:34.832+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.13s           2025-12-25T02:51:34
+================================================================================
+[2025-12-25T11:52:08.688+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.24s           2025-12-25T02:52:08
+================================================================================
+[2025-12-25T11:52:42.144+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T02:52:42
+================================================================================
+[2025-12-25T11:53:15.129+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  2.92s           2025-12-25T02:53:15
+================================================================================
+[2025-12-25T11:53:48.430+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:53:48
+================================================================================
+[2025-12-25T11:53:49.508+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:53:49.524+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:54:21.520+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T02:54:21
+================================================================================
+[2025-12-25T11:54:54.453+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  2.81s           2025-12-25T02:54:54
+================================================================================
+[2025-12-25T11:55:27.564+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T02:55:27
+================================================================================
+[2025-12-25T11:56:00.883+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T02:56:00
+================================================================================
+[2025-12-25T11:56:34.009+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.04s           2025-12-25T02:56:34
+================================================================================
+[2025-12-25T11:57:07.198+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T02:57:07
+================================================================================
+[2025-12-25T11:57:40.866+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T02:57:40
+================================================================================
+[2025-12-25T11:58:15.638+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  4.08s           2025-12-25T02:58:15
+================================================================================
+[2025-12-25T11:58:49.484+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.69s           2025-12-25T02:58:49
+================================================================================
+[2025-12-25T11:58:50.562+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:58:50.576+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T11:59:23.383+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.75s           2025-12-25T02:59:23
+================================================================================
+[2025-12-25T11:59:57.046+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.33s           2025-12-25T02:59:57
+================================================================================
+[2025-12-25T12:00:30.646+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.33s           2025-12-25T03:00:30
+================================================================================
+[2025-12-25T12:01:04.382+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T03:01:04
+================================================================================
+[2025-12-25T12:01:37.777+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:01:37
+================================================================================
+[2025-12-25T12:02:11.506+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T03:02:11
+================================================================================
+[2025-12-25T12:02:45.127+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.13s           2025-12-25T03:02:45
+================================================================================
+[2025-12-25T12:03:18.564+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T03:03:18
+================================================================================
+[2025-12-25T12:03:52.178+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.20s           2025-12-25T03:03:52
+================================================================================
+[2025-12-25T12:03:53.283+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:03:53.298+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:04:25.886+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.10s           2025-12-25T03:04:25
+================================================================================
+[2025-12-25T12:04:59.476+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.23s           2025-12-25T03:04:59
+================================================================================
+[2025-12-25T12:05:33.010+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:05:33
+================================================================================
+[2025-12-25T12:06:06.430+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.01s           2025-12-25T03:06:06
+================================================================================
+[2025-12-25T12:06:39.926+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.12s           2025-12-25T03:06:39
+================================================================================
+[2025-12-25T12:07:13.554+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:07:13
+================================================================================
+[2025-12-25T12:07:46.708+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.03s           2025-12-25T03:07:46
+================================================================================
+[2025-12-25T12:08:20.701+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.22s           2025-12-25T03:08:20
+================================================================================
+[2025-12-25T12:08:54.552+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:08:54
+================================================================================
+[2025-12-25T12:08:55.645+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:08:55.658+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:09:28.048+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.12s           2025-12-25T03:09:28
+================================================================================
+[2025-12-25T12:10:01.446+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:10:01
+================================================================================
+[2025-12-25T12:10:34.795+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:10:34
+================================================================================
+[2025-12-25T12:11:08.381+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:11:08
+================================================================================
+[2025-12-25T12:11:41.942+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.12s           2025-12-25T03:11:41
+================================================================================
+[2025-12-25T12:12:15.451+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:12:15
+================================================================================
+[2025-12-25T12:12:48.911+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:12:48
+================================================================================
+[2025-12-25T12:13:22.428+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:13:22
+================================================================================
+[2025-12-25T12:13:55.998+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:13:55
+================================================================================
+[2025-12-25T12:13:57.102+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:13:57.120+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:14:29.939+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.02s           2025-12-25T03:14:29
+================================================================================
+[2025-12-25T12:15:03.637+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.32s           2025-12-25T03:15:03
+================================================================================
+[2025-12-25T12:15:37.294+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T03:15:37
+================================================================================
+[2025-12-25T12:16:10.530+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.11s           2025-12-25T03:16:10
+================================================================================
+[2025-12-25T12:16:44.063+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.14s           2025-12-25T03:16:44
+================================================================================
+[2025-12-25T12:17:17.761+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T03:17:17
+================================================================================
+[2025-12-25T12:17:51.441+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T03:17:51
+================================================================================
+[2025-12-25T12:18:25.525+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.62s           2025-12-25T03:18:25
+================================================================================
+[2025-12-25T12:18:59.078+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:18:59
+================================================================================
+[2025-12-25T12:19:00.149+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:19:00.163+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:19:33.109+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.51s           2025-12-25T03:19:33
+================================================================================
+[2025-12-25T12:20:07.030+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.51s           2025-12-25T03:20:07
+================================================================================
+[2025-12-25T12:20:40.535+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.32s           2025-12-25T03:20:40
+================================================================================
+[2025-12-25T12:21:14.528+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.61s           2025-12-25T03:21:14
+================================================================================
+[2025-12-25T12:21:48.405+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.42s           2025-12-25T03:21:48
+================================================================================
+[2025-12-25T12:22:22.675+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.32s           2025-12-25T03:22:22
+================================================================================
+[2025-12-25T12:22:56.290+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:22:56
+================================================================================
+[2025-12-25T12:23:30.033+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.41s           2025-12-25T03:23:30
+================================================================================
+[2025-12-25T12:24:00.313+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:24:00.327+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:24:03.581+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:24:03
+================================================================================
+[2025-12-25T12:24:37.314+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T03:24:37
+================================================================================
+[2025-12-25T12:25:11.009+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T03:25:11
+================================================================================
+[2025-12-25T12:25:44.878+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.52s           2025-12-25T03:25:44
+================================================================================
+[2025-12-25T12:26:19.576+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  4.34s           2025-12-25T03:26:19
+================================================================================
+[2025-12-25T12:26:53.869+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  4.18s           2025-12-25T03:26:53
+================================================================================
+[2025-12-25T12:27:28.277+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  4.39s           2025-12-25T03:27:28
+================================================================================
+[2025-12-25T12:28:02.222+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.51s           2025-12-25T03:28:02
+================================================================================
+[2025-12-25T12:28:36.576+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.42s           2025-12-25T03:28:36
+================================================================================
+[2025-12-25T12:29:01.210+0900] {manager.py:738} INFO - Searching for files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:29:01.227+0900] {manager.py:741} INFO - There are 1 files in /mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags
+[2025-12-25T12:29:10.458+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.33s           2025-12-25T03:29:10
+================================================================================
+[2025-12-25T12:29:44.130+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:29:44
+================================================================================
+[2025-12-25T12:30:17.885+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.31s           2025-12-25T03:30:17
+================================================================================
+[2025-12-25T12:30:51.510+0900] {manager.py:879} INFO - 
+================================================================================
+DAG File Processing Stats
+
+File Path                                                                                                      PID    Runtime      # DAGs    # Errors  Last Runtime    Last Run
+-------------------------------------------------------------------------------------------------------------  -----  ---------  --------  ----------  --------------  -------------------
+/mnt/d/My Apps/Airflow Demand Forecast Project/airflow-demand-forecasting/dags/demand_forecasting_pipeline.py                           1           0  3.21s           2025-12-25T03:30:51
+================================================================================
