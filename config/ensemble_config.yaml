@@ -1,0 +1,116 @@
+# =============================================================================
+# Ensemble Model Configuration
+# =============================================================================
+
+ensemble:
+  type: "ensemble"
+  enabled: true
+  
+  # General settings
+  horizon_days: 30
+  
+  # Models to include in ensemble
+  models:
+    prophet:
+      enabled: true
+      weight: 0.4  # Used if weight_strategy="manual"
+    
+    sarima:
+      enabled: true
+      weight: 0.3
+      # For per-product SARIMA, aggregates predictions
+      aggregation_method: "sum"  # or "mean"
+    
+    deepar:
+      enabled: true
+      weight: 0.3
+  
+  # Ensemble strategy
+  strategy: "weighted_average"  # Options: weighted_average, best_model_selection, stacking
+  
+  # === STRATEGY 1: Weighted Average ===
+  weighted_average:
+    # How to determine weights
+    weight_strategy: "auto"  # Options: "auto", "manual", "equal"
+    
+    # If weight_strategy="auto", optimize based on validation
+    optimization:
+      metric: "mape"  # Metric to minimize
+      method: "inverse_error"  # or "optimization", "stacking"
+      
+      # Validation approach
+      validation:
+        method: "time_series_split"  # or "holdout"
+        n_splits: 5
+        test_size: 0.2
+  
+  # === STRATEGY 2: Best Model Selection ===
+  # (Alternative to weighted average)
+  best_model_selection:
+    enabled: false
+    
+    # Use first 20% of predictions to evaluate
+    evaluation_window: 0.2
+    
+    # Metric to use for selection
+    selection_metric: "mape"
+    
+    # Re-evaluation frequency
+    reeval_frequency: "weekly"  # or "monthly", "never"
+  
+  # === STRATEGY 3: Stacking ===
+  # (Advanced ensemble method)
+  stacking:
+    enabled: false
+    
+    # Meta-learner (trains on model predictions)
+    meta_learner: "ridge"  # or "lasso", "xgboost"
+    
+    # Meta-learner hyperparameters
+    meta_params:
+      alpha: 1.0  # For Ridge/Lasso
+    
+    # Use out-of-fold predictions for training
+    use_oof: true
+  
+  # Model output handling
+  output:
+    # Combine prediction intervals
+    combine_intervals: true
+    interval_method: "weighted"  # or "min_max"
+    
+    # Save individual model predictions
+    save_individual_predictions: true
+    
+    # Generate comparison report
+    generate_comparison_report: true
+  
+  # Fallback strategy if a model fails
+  fallback:
+    enabled: true
+    strategy: "remove_failed"  # or "use_backup_model"
+    min_models: 2  # Minimum models needed for ensemble
+
+# Evaluation
+evaluation:
+  # Metrics to track for each model and ensemble
+  metrics: ["mape", "rmse", "mae", "smape"]
+  
+  # Generate detailed comparison
+  comparison:
+    enabled: true
+    
+    # Visual comparison
+    plot_predictions: true
+    plot_errors: true
+    
+    # Statistical tests
+    statistical_tests:
+      enabled: true
+      tests: ["diebold_mariano", "friedman"]
+
+# Paths
+paths:
+  ensemble_dir: "models/ensemble"
+  predictions_dir: "data/predictions/ensemble"
+  comparison_dir: "data/predictions/ensemble/comparison"

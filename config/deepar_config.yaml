@@ -1,0 +1,134 @@
+# =============================================================================
+# DeepAR Model Configuration
+# =============================================================================
+
+model:
+  type: "deepar"
+  enabled: true
+  
+  # General settings
+  horizon_days: 30
+  seed: 42
+  
+  # Model versioning
+  versioning:
+    enabled: true
+    include_data_hash: true
+    include_timestamp: true
+  
+  # DeepAR-specific parameters
+  deepar:
+    # Architecture
+    num_layers: 2
+    hidden_size: 40
+    dropout_rate: 0.1
+    
+    # Training hyperparameters
+    epochs: 50
+    batch_size: 32
+    learning_rate: 0.001
+    weight_decay: 1e-8
+    
+    # Context and prediction length
+    context_length: 90     # How much history to use
+    prediction_length: 30  # Forecast horizon
+    
+    # Frequency
+    freq: "D"  # Daily frequency
+    
+    # External features (CRITICAL for DeepAR)
+    external_features:
+      enabled: true
+      
+      # Primary external feature
+      features:
+        - name: "revenue"
+          type: "dynamic_real"  # Changes over time
+          
+        # Additional optional features
+        # - name: "price"
+        #   type: "dynamic_real"
+        # - name: "promotions"
+        #   type: "dynamic_real"
+        # - name: "product_id"
+        #   type: "static_cat"  # Static categorical
+      
+      # Feature engineering for external features
+      preprocessing:
+        # Should we create lags of external features?
+        lag_external: true
+        lag_periods: [1, 7, 14]
+        
+        # Should we create rolling averages of external features?
+        rolling_external: true
+        rolling_windows: [7, 14, 30]
+        
+        # Normalization
+        normalize: true
+        normalization_method: "standard"  # or "minmax"
+    
+    # Loss function
+    loss_function: "NegativeBinomial"  # or "StudentT", "Gaussian"
+    
+    # Probabilistic forecasting
+    num_samples: 100  # Monte Carlo samples for prediction intervals
+    quantiles: [0.1, 0.5, 0.9]  # Prediction quantiles
+    
+    # Early stopping
+    early_stopping:
+      enabled: true
+      patience: 10
+      min_delta: 0.001
+    
+    # Model architecture details
+    cell_type: "lstm"  # or "gru"
+    scaling: true
+    
+    # Trainer configuration
+    trainer:
+      # GluonTS Trainer params
+      learning_rate: 0.001
+      weight_decay: 1e-8
+      batch_size: 32
+      num_batches_per_epoch: 50
+      clip_gradient: 10.0
+  
+  # Feature engineering for DeepAR
+  features:
+    # Time features (automatically handled by GluonTS)
+    use_time_features: true
+    
+    # Additional features
+    use_rolling: true
+    use_lags: false  # DeepAR handles lags internally
+
+# Training settings
+training:
+  # Train-validation split
+  validation_split: 0.2
+  
+  # Device
+  device: "cpu"  # or "cuda" if GPU available
+  
+  # Checkpointing
+  save_checkpoints: true
+  checkpoint_dir: "models/deepar/checkpoints"
+
+# Data format (GluonTS specific)
+data_format:
+  # GluonTS expects specific format
+  target_column: "sales_quantity"
+  timestamp_column: "ds"
+  
+  # Item (product) identifier
+  item_id_column: "product_id"  # None if single time series
+  
+  # External features mapping
+  feature_columns:
+    - "revenue"  # Maps to external_features
+
+# Paths
+paths:
+  model_dir: "models/deepar"
+  predictions_dir: "data/predictions/deepar"
+  features_file: "data/processed/deepar_features.csv"

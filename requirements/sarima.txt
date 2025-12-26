@@ -1,0 +1,10 @@
+# SARIMA Model Requirements
+
+# Statistical modeling
+statsmodels==0.14.0
+
+# Auto ARIMA
+pmdarima==2.0.4
+
+# Additional statistical utilities
+scipy==1.11.3

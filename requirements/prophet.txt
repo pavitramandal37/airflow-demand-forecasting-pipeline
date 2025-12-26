@@ -1,0 +1,8 @@
+# Prophet Model Requirements
+
+# Prophet and dependencies
+prophet==1.1.5
+cmdstanpy==1.2.0
+
+# Prophet uses these internally
+holidays==0.35

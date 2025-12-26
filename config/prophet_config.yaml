@@ -1,0 +1,78 @@
+# =============================================================================
+# Prophet Model Configuration
+# =============================================================================
+
+model:
+  type: "prophet"
+  enabled: true
+  
+  # General settings
+  horizon_days: 30
+  seed: 42
+  
+  # Model versioning
+  versioning:
+    enabled: true
+    include_data_hash: true
+    include_timestamp: true
+  
+  # Prophet-specific hyperparameters
+  prophet:
+    # Trend flexibility
+    changepoint_prior_scale: 0.05  # Lower = less flexible (0.001-0.5)
+    n_changepoints: 25
+    changepoint_range: 0.8
+    
+    # Seasonality
+    seasonality_prior_scale: 10.0  # Higher = more flexible
+    seasonality_mode: "multiplicative"  # or "additive"
+    
+    # Weekly seasonality
+    weekly_seasonality: true
+    weekly_seasonality_order: 3
+    
+    # Yearly seasonality
+    yearly_seasonality: true
+    yearly_seasonality_order: 10
+    
+    # Daily seasonality (usually false for daily data)
+    daily_seasonality: false
+    
+    # Holidays
+    include_holidays: false
+    holidays_country: "US"
+    
+    # Uncertainty intervals
+    interval_width: 0.95  # 95% confidence intervals
+    mcmc_samples: 0       # 0 = MAP, >0 = full Bayesian
+    
+    # Growth
+    growth: "linear"      # or "logistic" for saturating growth
+    # cap: 1000           # Required if growth="logistic"
+    # floor: 0            # Optional floor for logistic growth
+  
+  # Feature engineering specific to Prophet
+  features:
+    use_rolling: true
+    use_lags: true
+    
+    # Add regressors (external features)
+    additional_regressors:
+      enabled: false
+      regressors: []
+      # Example: ["revenue", "price", "promotions"]
+
+# Training settings
+training:
+  # Cross-validation for hyperparameter tuning
+  cross_validation:
+    enabled: false
+    initial: "730 days"
+    period: "180 days"
+    horizon: "30 days"
+
+# Paths (overrides base if needed)
+paths:
+  model_dir: "models/prophet"
+  predictions_dir: "data/predictions/prophet"
+  features_file: "data/processed/prophet_features.csv"

@@ -1,0 +1,109 @@
+# =============================================================================
+# SARIMA Model Configuration
+# =============================================================================
+
+model:
+  type: "sarima"
+  enabled: true
+  
+  # General settings
+  horizon_days: 30
+  seed: 42
+  
+  # Per-product modeling
+  per_product: true
+  products: "all"  # Or ["PROD_001", "PROD_002", "PROD_003"]
+  
+  # Model versioning (per product)
+  versioning:
+    enabled: true
+    include_data_hash: true
+    include_timestamp: true
+    product_specific: true
+  
+  # SARIMA-specific parameters
+  sarima:
+    # Automatic order selection
+    auto_arima:
+      enabled: true
+      seasonal: true
+      m: 7                # Seasonality period (7 for weekly)
+      
+      # Search space for (p, d, q)
+      start_p: 0
+      max_p: 5
+      start_q: 0
+      max_q: 5
+      max_d: 2
+      
+      # Search space for seasonal (P, D, Q)
+      start_P: 0
+      max_P: 2
+      start_Q: 0
+      max_Q: 2
+      max_D: 1
+      
+      # Model selection criterion
+      information_criterion: "aic"  # or "bic", "hqic"
+      
+      # Stepwise search (faster)
+      stepwise: true
+      trace: false
+      error_action: "ignore"
+      suppress_warnings: true
+      
+    # Manual order specification (if auto_arima disabled)
+    manual_order:
+      p: 1
+      d: 1
+      q: 1
+      P: 1
+      D: 1
+      Q: 1
+      m: 7
+    
+    # Estimation method
+    method: "lbfgs"  # or "bfgs", "newton", "nm", "powell"
+    
+    # Trend component
+    trend: "c"  # 'n': no trend, 'c': constant, 't': linear, 'ct': constant+linear
+    
+    # Model diagnostics
+    diagnostics:
+      perform_diagnostics: true
+      plot_diagnostics: false
+      
+      # Residual tests
+      ljung_box_lags: 10
+      jarque_bera_test: true
+  
+  # Feature engineering for SARIMA
+  features:
+    # SARIMA works on raw time series, minimal feature engineering
+    differencing_check: true
+    stationarity_test: "adf"  # Augmented Dickey-Fuller
+    
+    # External regressors (exogenous variables)
+    exogenous_variables:
+      enabled: false
+      variables: []
+      # Example: ["revenue", "promotions"]
+
+# Training settings
+training:
+  # Cross-validation
+  cross_validation:
+    enabled: true
+    n_splits: 5
+    test_size: 0.2
+  
+  # Parallel training for multiple products
+  parallel_training:
+    enabled: true
+    n_jobs: -1  # -1 = use all cores
+
+# Paths (per product structure)
+paths:
+  model_dir: "models/sarima"
+  predictions_dir: "data/predictions/sarima"
+  features_dir: "data/processed/sarima_features"

@@ -1,0 +1,67 @@
+# =============================================================================
+# Multi-Model Demand Forecasting - Base Configuration
+# =============================================================================
+# Shared settings used across all models (Prophet, SARIMA, DeepAR, Ensemble)
+# =============================================================================
+
+pipeline:
+  name: "multi_model_demand_forecasting"
+  version: "2.0.0"
+  owner: "data-engineering-team"
+  description: "Multi-model forecasting with Prophet, SARIMA, DeepAR, and Ensemble"
+
+# Paths (relative to project root)
+paths:
+  raw_data: "data/raw"
+  processed_data: "data/processed"
+  predictions: "data/predictions"
+  models: "models"
+  logs: "logs"
+
+# Data Quality Validation (shared across all models)
+data_quality:
+  max_null_rate: 0.05
+  min_records: 90
+  max_date_gap_days: 7
+  allow_negative_sales: false
+  outlier_iqr_multiplier: 1.5
+
+# Common Feature Engineering Settings
+features:
+  # Time features (used by all models)
+  extract_time_features: true
+  
+  # Rolling windows (Prophet, DeepAR)
+  rolling_windows: [7, 14, 30]
+  
+  # Lag features (Prophet, DeepAR, SARIMA diagnostics)
+  lag_days: [1, 7, 14]
+
+# Airflow DAG Settings
+airflow:
+  schedule_interval: "@daily"
+  start_date: "2024-01-01"
+  catchup: false
+  max_active_runs: 1
+  
+  default_args:
+    owner: "data-team"
+    retries: 2
+    retry_delay_seconds: 300
+    email_on_failure: false
+
+# Evaluation Metrics (shared)
+evaluation:
+  metrics:
+    - "mape"      # Mean Absolute Percentage Error
+    - "rmse"      # Root Mean Squared Error
+    - "mae"       # Mean Absolute Error
+    - "smape"     # Symmetric MAPE
+  
+  # Validation strategy
+  validation_split: 0.2  # Last 20% for validation
+
+# Logging
+logging:
+  level: "INFO"
+  format: "%(asctime)s - %(name)s - %(levelname)s - %(message)s"
