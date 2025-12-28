@@ -7,7 +7,7 @@
 pipeline:
   name: "multi_model_demand_forecasting"
   version: "2.0.0"
-  owner: "data-engineering-team"
+  owner: "Pavitra Mandal"
   description: "Multi-model forecasting with Prophet, SARIMA, DeepAR, and Ensemble"
 
 # Paths (relative to project root)
